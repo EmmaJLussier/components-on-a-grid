@@ -28,3 +28,11 @@ h2 {
   color: #30658d;
   font-family: "Patua One", sans-serif;
 }
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #fff;
+}
