@@ -14,19 +14,32 @@ img {
   width: 100%;
 }
 
+body {
+  margin: 0;
+  background-color: #f2f1ed;
+  display: grid;
+}
+h1 {
+  z-index: 1;
+}
+
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
 }
 
-body {
-  margin: 0;
-  background-color: #f2f1ed;
+main {
+
 }
+
 
 h2 {
   color: #30658d;
   font-family: "Patua One", sans-serif;
+}
+ul {
+  display: flex;
+  flex-direction: row;
 }
 
 li {
