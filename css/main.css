@@ -17,43 +17,49 @@ img {
 body {
   margin: 0;
   background-color: #f2f1ed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "banner banner" "col1 col2";
 }
 
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
-  grid-template-areas: "header nav";
 }
 
 h1 {
   width: 14rem;
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
   z-index: 1;
+  margin-top: 1.5em;
 }
 
 header img {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
+  grid-column: 1 / 3;
+  grid-row: 1 / -2;
   padding: 1rem;
 }
 
 main {
-  display: flex;
-  flex-direction: row;
+  display: contents;
   padding: 0;
 }
 
 h2 {
   color: #30658d;
   font-family: "Patua One", sans-serif;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 nav {
-  grid-area: nav;
+  grid-column: 2;
+  grid-row: 1;
   z-index: 1;
 }
 
@@ -71,4 +77,12 @@ a {
   font-size: 2rem;
   font-family: "Patua One", sans-serif;
   color: #fff;
+}
+
+figure:nth-of-type(1) {
+  grid-area: col1;
+}
+
+figure:nth-of-type(2) {
+  grid-area: col2;
 }
