@@ -33,11 +33,12 @@ h1 {
   grid-column: 1;
   grid-row: 1;
   z-index: 1;
+  align-self: end;
+  padding-left: 1rem;
 }
 
 header img {
-  grid-column: 1 / 3;
-  grid-row: 1 / -2;
+  grid-area: banner;
   padding: 1rem;
 }
 
@@ -49,7 +50,7 @@ main {
 h2 {
   color: #30658d;
   font-family: "Patua One", sans-serif;
-  margin: 0;
+  margin-bottom: 0;
 }
 
 p {
@@ -61,7 +62,6 @@ nav {
   grid-row: 1;
   z-index: 1;
   justify-content: end;
-  padding-right: 1.5em;
 }
 
 ul {
@@ -78,6 +78,12 @@ a {
   font-size: 2rem;
   font-family: "Patua One", sans-serif;
   color: #fff;
+}
+
+figure {
+  margin: 1rem;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 figure:nth-of-type(1) {
