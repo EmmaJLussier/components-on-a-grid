@@ -66,7 +66,6 @@ nav {
 ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
 li {
@@ -77,6 +76,7 @@ a {
   font-size: 2rem;
   font-family: "Patua One", sans-serif;
   color: #fff;
+  padding: 1rem;
 }
 
 figure:nth-of-type(1) {
