@@ -36,6 +36,7 @@ h1 {
   grid-row: 1;
   z-index: 1;
   align-self: end;
+  margin: 1rem;
 }
 
 header img {
